@@ -13,8 +13,20 @@ public class Exercicio2 {
 		double litros;
 		double kmtotal;
 
-		 //escreva seu código aqui
+		 while(true) {
+			System.out.println("Digite a distância inicial: ");
+			kmi = input.nextDouble();
+			System.out.println("Digite a distância final: ");
+			kmf = input.nextDouble();
+			System.out.println("Digite o total de combustível gasto: ");
+			litros = input.nextDouble();
 
-		input.close();
+			kmtotal = kmf - kmi;
+			ConsumoMedio = kmtotal / litros;
+
+			System.out.println("O consumo médio é: " + ConsumoMedio);
+		    
+			break;
+			}
 	}
 }
