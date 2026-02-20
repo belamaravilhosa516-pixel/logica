@@ -65,5 +65,6 @@ public class Exercicio18 {
 			 //escreva seu código aqui
 
 		input.close();
-	} 
+	}
+} 
 }

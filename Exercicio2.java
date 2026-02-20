@@ -27,6 +27,7 @@ public class Exercicio2 {
 			System.out.println("O consumo médio é: " + ConsumoMedio);
 		    
 			break;
-			}
+		}
+		input.close();
 	}
 }

@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class Exerc29 {
+public class Exercicio29{
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in); 
 
