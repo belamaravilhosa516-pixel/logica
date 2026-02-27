@@ -18,7 +18,10 @@ public class Exercicio17 {
 		cubo = Math.pow(num, 3);
 		raiz = Math.sqrt(num);
 		
-		//escreva seu código aqui
+		System.out.println("Número:" + num);
+		System.out.println("Quadrado: " + quadrado);
+		System.out.println("Cubo: " + cubo);
+		System.out.println("Raiz quadrada: " + raiz);
 			
 		input.close();
 	}
