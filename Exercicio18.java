@@ -62,7 +62,39 @@ public class Exercicio18 {
 			
 			double salarioMinimo = 450.00;
 			
-			 //escreva seu código aqui
+			 System.out.print("Insira o número de horas trabalhadas: ");
+			 horasTrabalhadas = input.nextInt();
+			 
+			 if (categoria == 'G') {
+				 if (turno == 'N') {
+					 valorHora = salarioMinimo * 0.18;
+				 } else {
+					 valorHora = salarioMinimo * 0.15;
+				 }
+			 } else {
+				 if (turno == 'N') {
+					 valorHora = salarioMinimo * 0.13;
+				 } else {
+					 valorHora = salarioMinimo * 0.10;
+				 }
+			 }
+			 
+			 salarioInicial = valorHora * horasTrabalhadas;
+			 
+			 if (salarioInicial <= 300) {
+				 auxilioAlimentacao = salarioInicial * 0.20;
+			 } else if (salarioInicial > 300 && salarioInicial <= 600) {
+				 auxilioAlimentacao = salarioInicial * 0.15;
+			 } else {
+				 auxilioAlimentacao = salarioInicial * 0.05;
+			 }
+			 
+			 System.out.println("Código: " + codigo);
+			 System.out.println("Horas trabalhadas: " + horasTrabalhadas);
+			 System.out.println("Valor da hora trabalhada: R$ " + valorHora);
+			 System.out.println("Salário inicial: R$ " + salarioInicial);
+			 System.out.println("Auxílio-alimentação: R$ " + auxilioAlimentacao);
+			 System.out.println("Salário final: R$ " + (salarioInicial + auxilioAlimentacao));
 
 		input.close();
 	}
