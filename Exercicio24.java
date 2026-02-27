@@ -16,8 +16,18 @@ public class Exercicio24 {
 		System.out.print("Digite a altura: ");
 		altura = input.nextDouble();
 		
-		 //escreva seu código aqui
+		 System.out.println("Gênero: " + (genero == 1 ? "Feminino" : "Masculino"));
 		
+		 if (genero == 1) {
+			 pesoIdeal = (62.1 * altura) - 44.7;
+		 } else if (genero == 2) {
+			 pesoIdeal = (72.7 * altura) - 58;
+		 } else {
+			 System.out.println("Gênero inválido.");
+			 input.close();
+			 return;
+		 }
+		 
 		input.close();
 	}
 }
