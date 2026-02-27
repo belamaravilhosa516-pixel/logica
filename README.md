@@ -1,2 +1,2 @@
 # logica
-Lista de exercícios de lógica de programação com JAVA concluído por Isabela
+Lista de exercícios de lógica de programação com JAVA concluído por Isabela Menezes
