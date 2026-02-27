@@ -10,7 +10,42 @@ public class Exercicio14 {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in); 
 
-		//escreva seu código aqui
+		System.out.print("Digite a idade da pessoa: ");
+		int idade = input.nextInt();
+
+		System.out.print("Digite o peso da pessoa: ");
+		double peso = input.nextDouble();
+
+		String grupoRisco = "";
+
+		if (idade < 20) {
+			if (peso <= 60) {
+				grupoRisco = "Grupo de risco 9";
+			} else if (peso > 60 && peso <= 90) {
+				grupoRisco = "Grupo de risco 8";
+			} else {
+				grupoRisco = "Grupo de risco 7";
+			}
+		} else if (idade >= 20 && idade <= 50) {
+			if (peso <= 60) {
+				grupoRisco = "Grupo de risco 6";
+			} else if (peso > 60 && peso <= 90) {
+				grupoRisco = "Grupo de risco 5";
+			} else {
+				grupoRisco = "Grupo de risco 4";
+			}
+		} else {
+			if (peso <= 60) {
+				grupoRisco = "Grupo de risco 3";
+			} else if (peso > 60 && peso <= 90) {
+				grupoRisco = "Grupo de risco 2";
+			} else {
+				grupoRisco = "Grupo de risco 1";
+			}
+		}
+
+        System.out.println("O grupo de risco da pessoa é: " + grupoRisco);
+
 		
 		input.close();
 	}
