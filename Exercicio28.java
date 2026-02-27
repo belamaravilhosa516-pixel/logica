@@ -9,7 +9,20 @@ public class Exercicio28 {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		
-		 //escreva seu código aqui
+		 System.out.print("Digite o triângulo 1: ");
+		 int angulo1 = input.nextInt();
+		 System.out.print("Digite o triângulo 2: ");
+		 int angulo2 = input.nextInt();
+		 System.out.print("Digite o triângulo 3: ");
+		 int angulo3 = input.nextInt();
+		
+		 if (angulo1 == 90 || angulo2 == 90 || angulo3 == 90) {
+			 System.out.println("Triângulo Retângulo");
+		 } else if (angulo1 > 90 || angulo2 > 90 || angulo3 > 90) {
+			 System.out.println("Triângulo Obtusângulo");
+		 } else {
+			 System.out.println("Triângulo Acutângulo");
+		 }
 		
 		input.close();
 	}
