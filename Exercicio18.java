@@ -62,6 +62,7 @@ public class Exercicio18 {
 			
 			double salarioMinimo = 450.00;
 			
+<<<<<<< HEAD
 			 System.out.print("Insira o número de horas trabalhadas: ");
 			 horasTrabalhadas = input.nextInt();
 			 
@@ -95,6 +96,10 @@ public class Exercicio18 {
 			 System.out.println("Salário inicial: R$ " + salarioInicial);
 			 System.out.println("Auxílio-alimentação: R$ " + auxilioAlimentacao);
 			 System.out.println("Salário final: R$ " + (salarioInicial + auxilioAlimentacao));
+=======
+			 //escreva seu código aqui
+		}
+>>>>>>> refs/remotes/origin/main
 
 		input.close();
 	}
