@@ -2,11 +2,7 @@
 
 import java.util.Scanner;
 
-<<<<<<< HEAD
 public class Exercicio29{
-=======
-public class Exercicio29 {
->>>>>>> refs/remotes/origin/main
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in); 
 
